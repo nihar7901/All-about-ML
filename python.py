@@ -116,7 +116,7 @@ print(np.ones((5),dtype=int))
 
 random = np.random.rand(5,5)
 print(random)
-'''
+
 
 import pandas as pd
 import numpy as np
@@ -139,4 +139,18 @@ print(df['column1'].value_counts())
 print(df['column1'].is_unique)
 
 print(df[['column1','column2']])
+'''
+
+import pandas as pd
+
+df = pd.read_csv('mercedesbenz.csv')
+
+print(df.shape)
+print(df.info())
+print(df.describe())
+
+print(df['X0'].value_counts())
+print(df['X0'].values)
+
+
 
